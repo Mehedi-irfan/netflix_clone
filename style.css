@@ -80,10 +80,12 @@ header .header-banner p {
   font-weight: 400;
   padding: 10px 0px;
 }
-header .header-banner .form {
+header .header-banner .form,
+.email-section .form {
   padding-top: 16px;
 }
-header .header-banner .form input {
+header .header-banner .form input,
+.email-section .form input {
   width: 350px;
   font-size: 17px;
   padding: 12px 12px;
@@ -218,6 +220,55 @@ section {
   z-index: 1;
   width: 23vw;
 }
+.frequently {
+  padding: 50px 0px;
+}
+.frequently h1 {
+  color: var(--secondary-color);
+  font-size: var(--common-fontSize);
+  font-family: var(--font-family);
+  font-weight: var(--common-fontWight);
+  margin: 0 auto;
+  padding: 50px 0px;
+  width: var(--common-width);
+}
+.frequently div {
+  color: var(--secondary-color);
+}
+.frequently div h4 {
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 0px;
+  font-size: var(--second-fontSize);
+  font-family: var(--font-family);
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.frequently div h4 span svg {
+  color: var(--secondary-color);
+}
+.frequently h4:hover {
+  background-color: #181616;
+}
+.email-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.email-section h3 {
+  font-size: var(--second-fontSize);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  padding-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
 /* media query  */
 @media only screen and (max-width: 768px) {
   header.header {
@@ -300,5 +351,25 @@ section {
     top: 28px;
     left: 70px;
     width: 59vw;
+  }
+  .frequently h1 {
+    font-size: var(--common-fontSize-responsive);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .frequently div h4 {
+    font-size: var(--second-fontSize-responsive);
+  }
+  .email-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .email-section h3 {
+    font-size: var(--second-fontSize-responsive);
+    padding-bottom: 5px;
+  }
+  .get_started {
+    margin-top: 10px;
   }
 }
