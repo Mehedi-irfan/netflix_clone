@@ -135,7 +135,8 @@ header nav .navbar {
   display: flex;
   gap: 25px;
 }
-main {
+main,
+footer {
   background-color: var(--black-color);
 }
 section {
@@ -269,6 +270,28 @@ section {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.footer div ul li {
+  color: rgb(173, 170, 170);
+  list-style: none;
+  margin: 15px 0px;
+  text-decoration: underline;
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+.footer div span {
+  color: rgb(173, 170, 170);
+  display: block;
+  margin-top: 15px;
+  font-family: var(--font-family);
+  font-size: 15px;
+}
 /* media query  */
 @media only screen and (max-width: 768px) {
   header.header {
@@ -371,5 +394,10 @@ section {
   }
   .get_started {
     margin-top: 10px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
